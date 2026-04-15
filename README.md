@@ -1,5 +1,5 @@
 ﻿# INFO-Capstone
-# WellKare — Next.js App
+# WellKare
 
 ## Setup
 
