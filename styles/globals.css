@@ -342,6 +342,17 @@ button {
   margin-bottom: 16px;
 }
 
+.step-bullet {
+  font-size: 14px;
+  color: var(--gray-700);
+  margin-bottom: 6px;
+}
+
+.step-bullets {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
 .step-nav {
   display: flex;
   justify-content: space-between;
