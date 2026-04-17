@@ -32,6 +32,18 @@ export default function HowItWorks() {
               Healthcare in the U.S. works differently than in many other countries. Understanding how it is organized helps you get the right care at the right cost.
             </p>
           </div>
+          <ul className="step-bullets">
+            {[
+              "You usually need health insurance to help pay for care.",
+              "Different situations call for different forms of care.",
+              "The cost also depends on which palce you go and what insurance you have.",
+              "In Washington, you may qualify for low-cost or even free insurance.",
+            ].map((b) => (
+              <li key={b} className="step-bullet">
+                {b}
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="step-nav">
