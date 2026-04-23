@@ -181,10 +181,50 @@ button {
   background: var(--teal-bg);
 }
 
+.home-header {
+  background: var(--teal-header);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-logo {
+  background: var(--white);
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal-dark);
+}
+
+.home-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.home-nav-btn {
+  background: var(--white);
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.home-nav-btn:hover {
+  background: var(--gray-50);
+}
+
+.home-nav-btn.primary {
+  background: var(--teal-primary);
+  color: var(--white);
+}
+
 .home-hero {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 48px 32px 32px;
+  padding: 64px 32px 32px;
 }
 
 .home-title {
@@ -249,6 +289,20 @@ button {
   color: var(--gray-500);
 }
 
+.about-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 999px;
+  padding: 8px 24px;
+  background: var(--teal-primary);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
 /* ── How It Works ── */
 .progress-row {
   display: flex;
@@ -271,6 +325,24 @@ button {
   width: 25%;
   background: var(--teal-primary);
   border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.progress-dot {
+  height: 4px;
+  flex: 1;
+  border-radius: 999px;
+  background: var(--gray-200);
+}
+
+.progress-dot.done {
+  background: var(--teal-primary);
 }
 
 .step-card {
@@ -302,16 +374,60 @@ button {
   margin-bottom: 16px;
 }
 
-.step-bullet {
-  font-size: 14px;
-  color: var(--gray-700);
-  margin-bottom: 6px;
-}
-
 .step-bullets {
   list-style-type: disc;
-  padding-left: 40px;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+
+.step-bullet {
+  font-size: 13px;
+  color: var(--gray-700);
+  line-height: 1.5;
+}
+
+.step-bullet-check {
+  color: var(--teal-primary);
+  font-size: 13px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.care-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.care-card {
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.care-card-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.badge-green { background: var(--green-bg); color: var(--green-text); }
+.badge-orange { background: var(--orange-bg); color: var(--orange-text); }
+.badge-red { background: var(--red-bg); color: var(--red-text); }
 
 .step-nav {
   display: flex;
@@ -349,6 +465,10 @@ button {
   background: var(--teal-dark);
 }
 
+.btn-next:hover {
+  background: var(--teal-dark);
+}
+
 /* ── Decision Tree ── */
 .tip-box {
   border-radius: 12px;
@@ -366,6 +486,8 @@ button {
 }
 
 .scenario-card {
+  width: 100%;
+  text-align: left;
   background: var(--white);
   border-radius: 16px;
   padding: 16px 20px;
@@ -373,6 +495,13 @@ button {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  cursor: pointer;
+  font-family: inherit;
+  transition: box-shadow 0.15s;
+}
+
+.scenario-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .scenario-title {
@@ -380,6 +509,68 @@ button {
   font-weight: 600;
   color: var(--gray-900);
   margin-bottom: 2px;
+}
+
+.scenario-sub {
+  font-size: 12px;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+
+.scenario-dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-primary { background: var(--teal-primary); }
+.dot-light { background: var(--teal-light); }
+
+.scenario-count {
+  font-size: 11px;
+  color: var(--gray-400);
+  margin-left: 4px;
+}
+
+.scenario-arrow {
+  font-size: 18px;
+  color: var(--gray-400);
+}
+
+.flow-option {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-700);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.flow-option:hover {
+  border-color: var(--teal-primary);
+  background: var(--teal-bg);
+}
+
+.disclaimer {
+  margin-top: 32px;
+  background: var(--gray-100);
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--gray-500);
 }
 /* ── Glossary ── */
 .search-input {
