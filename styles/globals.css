@@ -49,8 +49,8 @@ button {
 
 /* ── Navbar ── */
 .navbar {
-  background: var(--white);
-  border-bottom: 1px solid var(--gray-200);
+  background: var(--teal-header);
+  border-bottom: 1px solid var(--teal-light);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -87,7 +87,7 @@ button {
 .navbar-brand-text {
   font-weight: 700;
   font-size: 15px;
-  color: var(--teal-primary);
+  color: var(--teal-dark);
   line-height: 1.2;
 }
 
@@ -105,14 +105,14 @@ button {
 .navbar-link {
   padding: 6px 16px;
   border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--gray-700);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--teal-dark);
   transition: background 0.15s;
 }
 
 .navbar-link:hover {
-  background: var(--gray-100);
+  background: var(--teal-light);
 }
 
 .navbar-link.active {
@@ -124,9 +124,9 @@ button {
   margin-left: 12px;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid var(--gray-200);
+  border: 1px solid var(--teal-light);
   font-size: 13px;
-  color: var(--gray-700);
+  color: var(--teal-dark);
   background: var(--white);
 }
 
@@ -181,50 +181,10 @@ button {
   background: var(--teal-bg);
 }
 
-.home-header {
-  background: var(--teal-header);
-  padding: 16px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.home-logo {
-  background: var(--white);
-  border-radius: 999px;
-  padding: 8px 20px;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--teal-dark);
-}
-
-.home-nav {
-  display: flex;
-  gap: 8px;
-}
-
-.home-nav-btn {
-  background: var(--white);
-  border-radius: 999px;
-  padding: 6px 20px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--gray-700);
-}
-
-.home-nav-btn:hover {
-  background: var(--gray-50);
-}
-
-.home-nav-btn.primary {
-  background: var(--teal-primary);
-  color: var(--white);
-}
-
 .home-hero {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 64px 32px 32px;
+  padding: 48px 32px 32px;
 }
 
 .home-title {
