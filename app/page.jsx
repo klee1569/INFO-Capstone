@@ -1,17 +1,10 @@
+import Navbar from "../components/Navbar.jsx";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="home-page">
-      <header className="home-header">
-        <div className="home-logo">wellKare</div>
-        <nav className="home-nav">
-          {["Walkthrough", "Care Guide", "Glossary"].map((item) => (
-            <button key={item} className="home-nav-btn">{item}</button>
-          ))}
-          <button className="home-nav-btn primary">Appointment</button>
-        </nav>
-      </header>
+    <div className="page">
+      <Navbar />
 
       <section className="home-hero">
         <h1 className="home-title">
@@ -34,6 +27,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <button className="about-btn">About</button>
     </div>
   );
 }
