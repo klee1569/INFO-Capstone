@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Navbar from "../../components/Navbar.jsx";
 import Link from "next/link";
 
@@ -360,8 +360,19 @@ export default function DecisionTree() {
   const [activeId, setActiveId] = useState(null);
   const [stepIndex, setStepIndex] = useState(0);
   const [result, setResult] = useState(null);
+  const [search, setSearch] = useState("");
 
   const scenario = scenarios.find((s) => s.id === activeId);
+
+  const filtered = useMemo(() => {
+    const query = search.toLowerCase().trim();
+    if (!query) return scenarios;
+    return scenarios.filter(
+      (s) =>
+        s.title.toLowerCase().includes(query) ||
+        s.subtitle.toLowerCase().includes(query)
+    );
+  }, [search]);
 
   const reset = () => {
     setActiveId(null);
@@ -442,11 +453,7 @@ export default function DecisionTree() {
             <div className="step-card-body">
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {current.options.map((opt) => (
-                  <button
-                    key={opt.label}
-                    onClick={() => handleOption(opt)}
-                    className="flow-option"
-                  >
+                  <button key={opt.label} onClick={() => handleOption(opt)} className="flow-option">
                     {opt.label}
                   </button>
                 ))}
@@ -487,8 +494,22 @@ export default function DecisionTree() {
           Answer a few simple questions and we'll guide you to the right care option for your situation.
         </div>
 
+        <input
+          type="text"
+          placeholder="Search scenarios..."
+          className="search-input"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+
+        {filtered.length === 0 && (
+          <p style={{ fontSize: 14, color: "var(--gray-500)", marginBottom: 16 }}>
+            No scenarios found for "{search}".
+          </p>
+        )}
+
         <div className="scenario-list">
-          {scenarios.map((s) => (
+          {filtered.map((s) => (
             <button key={s.id} className="scenario-card" onClick={() => { setActiveId(s.id); setStepIndex(0); setResult(null); }}>
               <div>
                 <div className="scenario-title">{s.title}</div>
@@ -502,6 +523,10 @@ export default function DecisionTree() {
               <span className="scenario-arrow">›</span>
             </button>
           ))}
+        </div>
+
+        <div className="disclaimer">
+          This tool is for information only. No data is collected. Always consult a healthcare professional for medical advice.
         </div>
       </main>
     </div>
