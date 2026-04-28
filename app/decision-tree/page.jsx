@@ -396,7 +396,7 @@ export default function DecisionTree() {
           <div className="breadcrumb">
             <Link href="/">Home</Link>
           </div>
-          <h1 className="page-title">Decision Tree: I Need Care</h1>
+          <h1 className="page-title">Care Guide: I Need Care</h1>
           <p className="page-subtitle">Choose your situation to get personalized guidance on the right care for you.</p>
           <div className="step-card">
             <div className="step-card-header">
@@ -436,7 +436,7 @@ export default function DecisionTree() {
           <div className="breadcrumb">
             <Link href="/">Home</Link> / <span style={{ cursor: "pointer", textDecoration: "underline" }} onClick={reset}>Decision Tree</span>
           </div>
-          <h1 className="page-title">Decision Tree: I Need Care</h1>
+          <h1 className="page-title">Care Guide: I Need Care</h1>
           <p className="page-subtitle">{scenario.title}</p>
 
           <div className="progress-row">
@@ -487,7 +487,7 @@ export default function DecisionTree() {
         <div className="breadcrumb">
           <Link href="/">Home</Link>
         </div>
-        <h1 className="page-title">Decision Tree: I Need Care</h1>
+        <h1 className="page-title">Care Guide: I Need Care</h1>
         <p className="page-subtitle">Choose your situation to get personalized guidance on the right care for you.</p>
 
         <div className="tip-box">

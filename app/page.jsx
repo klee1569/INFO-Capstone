@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <button className="about-btn">About</button>
+      <Link href="/about" className="about-btn">About</Link>
     </div>
   );
 }
