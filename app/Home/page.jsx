@@ -1,18 +1,26 @@
 
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Navbar from "../../components/Navbar.jsx";
 import Link from "next/link";
 
 export default function Home(){
     return (
-        <main className="homepage">
+        <main className="Home">
+            <Link href="/">Home</Link>
             <section className="hero">
-                <h1>Health Care In the U.S explained <br> <em>simply</em> </br></h1>
-                <p> S imple guide to help immigrants in Seattle and King County 
-                    area understand and navigate the U.S. healthcare system with confidence.
+                
+                <h1>Understand U.S. Healthcare in simple terms <br> <em>simply</em> </br></h1>
+                <p> WellKare helps you navigate the united states health care
+                    system confidently with all the nedded resources
                 </p>
             </section>
+
+            <div> 
+
+            </div>
+
+            
 
             
         </main>

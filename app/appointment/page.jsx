@@ -7,7 +7,7 @@ export default function Appointment() {
       <Navbar />
       <main className="main">
         <div className="breadcrumb">
-          <Link href="/">Home</Link>
+          <Link href="/">Appointment</Link>
         </div>
         <h1 className="page-title">Appointment Walkthrough</h1>
         <p className="page-subtitle">This section is coming soon.</p>
