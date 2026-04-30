@@ -17,7 +17,7 @@ export default function Home(){
             </section>
 
             <section>
-                <h2>How we can help you</h2>
+                <h2>Where would you like to navigate?</h2>
                 <br></br>
                 <div className="feature-grid-1">
                     <div className="feature-grid-card">
