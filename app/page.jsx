@@ -8,7 +8,7 @@ export default function Home() {
 
       <section className="home-hero">
         <h1 className="home-title">
-          Health Care in the U.S<br />explained simply
+          Health Care in the U.S.<br />explained simply
         </h1>
         <Link href="/how-it-works" className="home-start-btn">Start here</Link>
       </section>
