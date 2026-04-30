@@ -10,9 +10,9 @@ export default function Home(){
         <main className="Home">
             <section className="hero">
                 <br></br>
-                <h1>Understand U.S. Healthcare in simple terms <em>easily.</em></h1>
-                <p> WellKare helps you navigate the united states health care
-                    system confidently with all the nedded resources
+                <h1>Understand the U.S. Healthcare system in simple terms <em>easily.</em></h1>
+                <p> WellKare helps you navigate the United States Healthcare
+                    system confidently with all the needed resources available.
                 </p>
             </section>
 
@@ -34,11 +34,11 @@ export default function Home(){
                     <div className="feature-grid-card">
                         <h3> Appointment Making </h3>
                         <p>
-                            Figuering out how to schedule an appointment can be hard, but
+                            Figuring out how to schedule an appointment can be hard, but
                             we will walk you through the steps and help guide you on how to register for 
                             the right appointment.
                         </p>
-                        <Link href="/appointment">Making Appointment → </Link>
+                        <Link href="/appointment">Making an Appointment → </Link>
                     </div>
             
 
@@ -48,7 +48,7 @@ export default function Home(){
                             Find out where to go for medical care.
                         </p>
 
-                        <Link href="/decision tree"> <br></br>learn More → </Link>
+                        <Link href="/decision tree"> <br></br>Learn More → </Link>
                     </div>
                 </div>
             </section>
