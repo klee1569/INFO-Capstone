@@ -32,13 +32,13 @@ export default function Home(){
                    
 
                     <div className="feature-grid-card">
-                        <h3> Appointment Making </h3>
+                        <h3> Appointments </h3>
                         <p>
                             Figuring out how to schedule an appointment can be hard, but
                             we will walk you through the steps and help guide you on how to register for 
                             the right appointment.
                         </p>
-                        <Link href="/appointment">Making an Appointment → </Link>
+                        <Link href="/appointment">Scheduling an Appointment → </Link>
                     </div>
             
 
