@@ -48,7 +48,7 @@ export default function Home(){
                             Find out where to go for medical care.
                         </p>
 
-                        <Link href="/decision tree"> <br></br>Learn More → </Link>
+                        <Link href="/decision guide"> <br></br>Learn More → </Link>
                     </div>
                 </div>
             </section>
