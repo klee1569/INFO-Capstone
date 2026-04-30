@@ -31,7 +31,7 @@ const steps = [
   },
   {
     title: "Find a Primary Care Provider (PCP)",
-    intro: "Once you have insurance, your next step is finding a primary care doctor. This is the person you'll see for regular checkups and everyday health concerns. Always confirm they accept your insurance before booking, as seeing an out-of-network doctor can cost significantly more. Building an ongoing relationship with a PCP also means better care over time, since they'll know your health history.",
+    intro: "Once you have insurance, your next step is finding a primary care doctor. This is the main doctor you'll see for regular checkups and everyday health concerns. Always confirm they accept your insurance before booking an appointment, as seeing an out-of-network doctor can cost significantly more. Building an ongoing relationship with a provider ensures better care over time, as they will know your health history.",
     bullets: [],
     cards: [],
   },
