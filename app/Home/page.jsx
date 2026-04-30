@@ -1,28 +1,58 @@
 
-"use client";
-import { useState, useMemo } from "react";
 import Navbar from "../../components/Navbar.jsx";
 import Link from "next/link";
 
 export default function Home(){
     return (
+        <div className="Home">
+            <Navbar />
+    
         <main className="Home">
-            <Link href="/">Home</Link>
             <section className="hero">
-                
-                <h1>Understand U.S. Healthcare in simple terms <br> <em>simply</em> </br></h1>
+                <br></br>
+                <h1>Understand U.S. Healthcare in simple terms <em>simply</em></h1>
                 <p> WellKare helps you navigate the united states health care
                     system confidently with all the nedded resources
                 </p>
             </section>
 
-            <div> 
+            <section>
+                <h2>How we can help you</h2>
+                <br></br>
+                <div className="feature-grid-1">
+                    <div className="feature-grid-card">
+                        <h3>Glossary</h3>
+                        <p>
+                            Learn the meaning and definition of common
+                            healthcare and insurance terms to understand medical services in the 
+                            United States better
+                        </p>
+                        <a href="/glossary"> <br></br>View Glossary → </a>
+                    </div>
+                   
 
-            </div>
-
+                    <div className="feature-grid-card">
+                        <h3> Appointment Making </h3>
+                        <p>
+                            Figuering out how to schedule an appointment can be hard, 
+                            we will walk you through the steps and help guide you how to make 
+                            the right appointment.
+                        </p>
+                        <Link href="/appointment">Making Appointment → </Link>
+                    </div>
             
 
-            
+                    <div className="feature-grid-card">
+                        <h3> Decision Guide</h3>
+                        <p>
+                            Find out where to go for medical care.
+                        </p>
+
+                        <Link href="/decision tree"> <br></br>learn More → </Link>
+                    </div>
+                </div>
+            </section>
         </main>
+        </div>
     )
 }

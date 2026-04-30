@@ -589,4 +589,60 @@ button {
   border-color: var(--teal-primary);
 }
 
+.home {
+  padding: 40px;
+  max-width: 1024x;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+.hero h1 {
+  font-size: 2.0rem;
+  margin-bottom: 12px;
+  color: var(--gray-800);
+
+}
+
+.hero p{
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.features {
+  margin-bottom: 40px;
+
+}
+
+.features h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 32px;
+}
+
+.feature-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+}
+
+.feature-grid-card{
+  border: 1px solid var(--teal-light);
+  padding: 20px;
+  border-radius: 14px;
+  background: var(--white);
+  transition: all 0.2s ease;
+
+}
+
 
