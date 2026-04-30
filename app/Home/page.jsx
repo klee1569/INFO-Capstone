@@ -10,7 +10,7 @@ export default function Home(){
         <main className="Home">
             <section className="hero">
                 <br></br>
-                <h1>Understand U.S. Healthcare in simple terms <em>simply</em></h1>
+                <h1>Understand U.S. Healthcare in simple terms <em>easily.</em></h1>
                 <p> WellKare helps you navigate the united states health care
                     system confidently with all the nedded resources
                 </p>
