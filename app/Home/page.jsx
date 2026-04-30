@@ -23,9 +23,9 @@ export default function Home(){
                     <div className="feature-grid-card">
                         <h3>Glossary</h3>
                         <p>
-                            Learn the meaning and definition of common
-                            healthcare and insurance terms to understand medical services in the 
-                            United States better
+                            Learn the definitions of common
+                            healthcare and insurance terms to better understand medical services in the 
+                            United States.
                         </p>
                         <a href="/glossary"> <br></br>View Glossary → </a>
                     </div>
@@ -34,8 +34,8 @@ export default function Home(){
                     <div className="feature-grid-card">
                         <h3> Appointment Making </h3>
                         <p>
-                            Figuering out how to schedule an appointment can be hard, 
-                            we will walk you through the steps and help guide you how to make 
+                            Figuering out how to schedule an appointment can be hard, but
+                            we will walk you through the steps and help guide you on how to register for 
                             the right appointment.
                         </p>
                         <Link href="/appointment">Making Appointment → </Link>
