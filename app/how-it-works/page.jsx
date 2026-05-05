@@ -23,9 +23,8 @@ const steps = [
     title: "Your First Stop: Get Insurance",
     intro: "Without insurance, healthcare in the U.S. can be extremely expensive. Most people get coverage through their job, a government program, or by buying a plan themselves. Common options include:",
     bullets: [
-      "Medicaid: free or low-cost coverage for people with lower income",
-      "Medicare: for people 65 and older",
-      "CHIP: free or low-cost coverage for children",
+      <a href="https://www.healthcare.gov/medicaid-chip/">Medicaid:</a>
+      
     ],
     cards: [],
   },
