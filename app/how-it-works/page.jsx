@@ -23,8 +23,9 @@ const steps = [
     title: "Your First Stop: Get Insurance",
     intro: "Without insurance, healthcare in the U.S. can be extremely expensive. Most people get coverage through their job, a government program, or by buying a plan themselves. Common options include:",
     bullets: [
-      <a href="https://www.healthcare.gov/medicaid-chip/">Medicaid:</a>
-      
+      <p><a href="https://www.healthcare.gov/medicaid-chip/">Medicaid:</a> free or low-cost coverage for people with lower income</p>,
+      <p><a href="https://www.ssa.gov/medicare/sign-up">Medicare:</a> for people 65 and older</p>,
+      <p><a href="https://www.healthcare.gov/medicaid-chip/childrens-health-insurance-program/">CHIP:</a> free or low-cost coverage for children</p>
     ],
     cards: [],
   },
@@ -83,8 +84,8 @@ export default function HowItWorks() {
 
             {step.bullets.length > 0 && (
               <ul className="step-bullets">
-                {step.bullets.map((b) => (
-                  <li key={b} className="step-bullet">{b}</li>
+                {step.bullets.map((b, i) => (
+                  <li key={i} className="step-bullet">{b}</li>
                 ))}
               </ul>
             )}
