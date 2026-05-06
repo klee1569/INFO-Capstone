@@ -7,6 +7,7 @@ const navLinks = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/decision-guide", label: "Care Guide" },
   { href: "/glossary", label: "Glossary" },
+  { href: "/chatbot", label: "Chatbot" },
   { href: "/appointment", label: "Walkthrough" },
 ];
 
