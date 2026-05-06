@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 const starterMessages = [
   {
@@ -66,7 +67,7 @@ export default function Chatbot() {
               <span className="chatbot-message-label">
                 {item.role === "user" ? "You" : "WellKare Assistant"}
               </span>
-              <p>{item.content}</p>
+              <ReactMarkdown>{item.content}</ReactMarkdown>
             </div>
           </div>
         ))}

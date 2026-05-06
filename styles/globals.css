@@ -602,25 +602,31 @@ button {
 
 .chatbot-message-row.assistant {
   justify-content: flex-start;
+  padding-left: 8px;
 }
 
 .chatbot-message {
   max-width: min(82%, 520px);
   border-radius: 14px;
-  padding: 12px 14px;
+  padding: 14px 16px;
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.6;
   color: var(--gray-800);
 }
 
 .chatbot-message.user {
   background: var(--teal-primary);
   color: var(--white);
+  margin-right: 1rem;
+  /* padding-left: 2rem; */
 }
 
 .chatbot-message.assistant {
   background: var(--white);
   border: 1px solid var(--gray-200);
+  margin-left: 1rem;
+  padding-left: 2rem;
+  /* padding-right: 2rem; */
 }
 
 .chatbot-message-label {
