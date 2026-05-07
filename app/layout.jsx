@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "WellKare - Your guide to U.S. healthcare",
-  description: "Health Care in the U.S. explained simply",
+  title: "WellKare - Your guide to U.S. Healthcare",
+  description: "Healthcare in the U.S. explained simply",
 };
 
 export default function RootLayout({ children }) {

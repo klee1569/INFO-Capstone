@@ -60,7 +60,7 @@ export default function HowItWorks() {
         <div className="breadcrumb">
           <Link href="/">Home</Link>
         </div>
-        <h1 className="page-title">How U.S. Healthcare Works:</h1>
+        <h1 className="page-title">How the U.S. Healthcare System Works:</h1>
         <p className="page-subtitle">Follow these steps to understand the system.</p>
 
         <div className="progress-row">

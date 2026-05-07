@@ -16,11 +16,11 @@ export default function Home() {
       <section style={{ maxWidth: 560, margin: "0 auto", paddingBottom: 64 }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
           <Link href="/how-it-works" className="home-card highlighted">
-            <p className="home-card-title">How Health care in the U.S works</p>
-            <p className="home-card-sub">A simple guide for understanding health care system in the U.S</p>
+            <p className="home-card-title">How Healthcare in the U.S. works</p>
+            <p className="home-card-sub">A simple guide for understanding the Healthcare system in the U.S.</p>
           </Link>
           <Link href="/how-it-works" className="home-card">
-            <p className="home-card-title">Insurance Walk through</p>
+            <p className="home-card-title">Insurance Walkthrough</p>
           </Link>
           <Link href="/glossary" className="home-card">
             <p className="home-card-title">Health Glossary</p>
