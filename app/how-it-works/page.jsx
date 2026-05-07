@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const steps = [
   {
-    title: "The U.S. Healthcare System",
+    title: "Understanding The U.S. Healthcare System",
     intro: "Healthcare in the U.S. works differently than in most other countries. Knowing how it's set up helps you find the right care without overpaying.",
     bullets: [
       "You'll almost always need health insurance to help cover costs.",
@@ -20,7 +20,7 @@ const steps = [
     ],
   },
   {
-    title: "Your First Stop: Get Insurance",
+    title: "Geting Insurance",
     intro: "Without insurance, healthcare in the U.S. can be extremely expensive. Most people get coverage through their job, a government program, or by buying a plan themselves. Common options include:",
     bullets: [
       <p><a href="https://www.healthcare.gov/medicaid-chip/">Medicaid:</a> free or low-cost coverage for people with lower income</p>,
@@ -30,7 +30,7 @@ const steps = [
     cards: [],
   },
   {
-    title: "Find a Primary Care Provider (PCP)",
+    title: "Finding a Primary Care Provider (PCP)",
     intro: "Once you have insurance, your next step is finding a primary care doctor. This is the main doctor you'll see for regular checkups and everyday health concerns. Always confirm they accept your insurance before booking an appointment, as seeing an out-of-network doctor can cost significantly more. Building an ongoing relationship with a provider ensures better care over time, as they will know your health history.",
     bullets: [],
     cards: [],
