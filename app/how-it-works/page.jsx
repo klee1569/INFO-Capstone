@@ -6,11 +6,11 @@ import Link from "next/link";
 const steps = [
   {
     title: "Understanding The U.S. Healthcare System",
-    intro: "Healthcare in the U.S. works differently than in most other countries. Knowing how it's set up helps you find the right care without overpaying.",
+    intro: "Healthcare in the U.S. works differently than in most other countries. Knowing how it's set up will help you find the right care that you need.",
     bullets: [
-      "You'll almost always need health insurance to help cover costs.",
-      "There are different places to get care, and each one fits different situations.",
-      "What you pay depends on where you go and what insurance you have.",
+      "You'll almost always need health insurance to help cover costs of appointents, or other related services.",
+      "There are different places to access care, and each one fits different situations.",
+      "What you pay depends on where you go for care and what insurance you have.",
       "If you live in Washington State, you may qualify for free or low-cost insurance.",
     ],
     cards: [
@@ -31,7 +31,7 @@ const steps = [
   },
   {
     title: "Finding a Primary Care Provider (PCP)",
-    intro: "Once you have insurance, your next step is finding a primary care doctor. This is the main doctor you'll see for regular checkups and everyday health concerns. Always confirm they accept your insurance before booking an appointment, as seeing an out-of-network doctor can cost significantly more. Building an ongoing relationship with a provider ensures better care over time, as they will know your health history.",
+    intro: "Once you have insurance, your next step is finding a primary care doctor. This is the main doctor you'll see for regular checkups and everyday health concerns. Always confirm they accept your insurance before booking an appointment, as seeing an out-of-network doctor can cost significantly more. Building an ongoing relationship with a provider ensures better care over time, as they will know your health history, and offer you personalized care.",
     bullets: [],
     cards: [],
   },

@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "leaflet/dist/leaflet.css";
 
 export const metadata = {
-  title: "WellKare - Your guide to U.S. Healthcare",
+  title: "WellKare - Your guide to the U.S. Healthcare system",
   description: "Healthcare in the U.S. explained simply",
 };
 
