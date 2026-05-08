@@ -140,7 +140,7 @@ export default function ChatbotWidget() {
         aria-expanded={isOpen}
         aria-label={isOpen ? "Minimize WellKare Assistant" : "Open WellKare Assistant"}
       >
-        {isOpen ? "Chat" : "Ask"}
+        {isOpen ? "Close Chat" : "Ask Chatbot"}
       </button>
     </div>
   );
