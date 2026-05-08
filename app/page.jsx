@@ -25,10 +25,11 @@ export default function Home() {
           <Link href="/glossary" className="home-card">
             <p className="home-card-title">Health Glossary</p>
           </Link>
+          <Link href="/about" className="home-card">
+            <p className="home-card-title">About WellKare</p>
+          </Link>
         </div>
       </section>
-
-      <Link href="/about" className="about-btn">About</Link>
     </div>
   );
 }
