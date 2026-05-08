@@ -17,10 +17,23 @@ New immigrants often face barriers when accessing healthcare, or struggle to und
 - 
 
 ## Solution
+WellKare provides a simple web guide that explains common healthcare concepts, helps users choose next steps through guided questions, and connects users to helpful resources such as glossaries, appointment guidance, provider search, and a site-wide assistant.
 
 ## Features
+- Step-by-step explanation of how healthcare and insurance work in the U.S.
+- Decision guide for common healthcare situations.
+- Glossary of insurance and healthcare terms.
+- Appointment walkthrough for preparing for care.
+- Provider search map for nearby healthcare facilities.
+- Floating chatbot assistant for general guidance and site navigation.
 
 ## Tech Stack
+- Next.js
+- React
+- OpenAI API
+- Leaflet and React Leaflet
+- React Markdown
+- CSS
 
 ## Project Strcuture
 

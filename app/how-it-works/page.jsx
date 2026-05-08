@@ -121,7 +121,7 @@ export default function HowItWorks() {
               Next &rsaquo;
             </button>
           ) : (
-            <Link href="/decision-tree" className="btn-next" style={{ background: "var(--green-text)" }}>
+            <Link href="/decision-guide" className="btn-next" style={{ background: "var(--green-text)" }}>
               Done ✓
             </Link>
           )}
