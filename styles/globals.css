@@ -706,6 +706,111 @@ button {
     max-width: 92%;
   }
 }
+
+/* quiz page only */
+
+.quiz-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quiz-page .quiz-card {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-page .title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quiz-page .progress {
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.quiz-page .question {
+  font-size: 24px;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.quiz-page .options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quiz-page .option-btn {
+  padding: 16px;
+  border: 2px solid #d1d5db;
+  background: white;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.quiz-page .option-btn:hover {
+  background: #f9fafb;
+}
+
+.quiz-page .option-btn.selected {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.quiz-page .next-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 16px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quiz-page .next-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.quiz-page .score {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.warning {
+  text-align: center;
+  margin-top: 20px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 /* ── Glossary ── */
 .search-input {
   width: 100%;
@@ -779,16 +884,129 @@ button {
 
 }
 
+/* =========================
+   APPOINTMENTS PAGE
+========================= */
+
+.appointments-page {
+  padding: 32px;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.appointments-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.appointments-header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.city-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.city-select-wrapper label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.city-select {
+  min-width: 220px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.city-select:hover {
+  border-color: #2563eb;
+}
+
+.city-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.appointments-map-section {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.appointments-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+/* Better mobile layout */
+
+@media (max-width: 768px) {
+  .appointments-page {
+    padding: 20px;
+  }
+
+  .appointments-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .city-select {
+    width: 100%;
+  }
+
+  .appointments-header h1 {
+    font-size: 2rem;
+  }
+}
+
 /* Chatbot widget */
 .chatbot-widget {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  z-index: 100;
+
+  /* key fix */
+  z-index: 99999;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 12px;
+
   pointer-events: none;
 }
 

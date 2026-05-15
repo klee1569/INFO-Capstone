@@ -8,7 +8,7 @@ const navLinks = [
   { href: "/decision-guide", label: "Care Guide" },
   { href: "/glossary", label: "Glossary" },
   { href: "/chatbot", label: "Chatbot" },
-  { href: "/appointment", label: "Walkthrough" },
+  { href: "/appointment", label: "Appointments" },
 ];
 
 export default function Navbar() {
