@@ -18,11 +18,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <Link href="/" className="navbar-brand">
-          <div className="navbar-logo">W</div>
-          <div>
-            <div className="navbar-brand-text">WellKare</div>
-            <div className="navbar-brand-sub">Your guide to U.S. healthcare</div>
-          </div>
+          <img src="/image.png" alt="WellKare" style={{ height: 65, width: "150px" }} />
         </Link>
         <div className="navbar-links">
           {navLinks.map((link) => (
