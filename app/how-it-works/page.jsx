@@ -20,8 +20,8 @@ const steps = [
     ],
   },
   {
-    title: "Geting Insurance",
-    intro: "Without insurance, healthcare in the U.S. can be extremely expensive. Most people get coverage through their job, a government program, or by buying a plan themselves. Common options include:",
+    title: "Getting Insurance",
+    intro: "Without insurance, accessing healthcare in the U.S. can be extremely expensive. Most people get coverage through their job, a government program, or by buying a plan themselves. Common options include:",
     bullets: [
       <p><a href="https://www.healthcare.gov/medicaid-chip/">Medicaid:</a> free or low-cost coverage for people with lower income</p>,
       <p><a href="https://www.ssa.gov/medicare/sign-up">Medicare:</a> for people 65 and older</p>,

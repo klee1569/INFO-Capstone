@@ -8,7 +8,7 @@ export default function Home() {
 
       <section className="home-hero">
         <h1 className="home-title">
-          Health Care in the U.S.<br />explained simply
+          Healthcare in the United States<br />Explained Simply
         </h1>
         <Link href="/how-it-works" className="home-start-btn">Start here</Link>
       </section>
@@ -23,7 +23,7 @@ export default function Home() {
             <p className="home-card-title">Insurance Walkthrough</p>
           </Link>
           <Link href="/glossary" className="home-card">
-            <p className="home-card-title">Health Glossary</p>
+            <p className="home-card-title">Healthcare Terms Glossary</p>
           </Link>
           <Link href="/about" className="home-card">
             <p className="home-card-title">About WellKare</p>
