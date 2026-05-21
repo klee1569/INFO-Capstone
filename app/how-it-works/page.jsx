@@ -121,8 +121,8 @@ export default function HowItWorks() {
               Next &rsaquo;
             </button>
           ) : (
-            <Link href="/decision-guide" className="btn-next" style={{ background: "var(--green-text)" }}>
-              Done ✓
+            <Link href="/quiz" className="btn-next" style={{ background: "var(--green-text)" }}>
+              Start Quiz ✓
             </Link>
           )}
         </div>
