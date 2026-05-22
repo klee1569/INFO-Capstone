@@ -5,7 +5,6 @@ import Navbar from "../../components/Navbar";
 import { useEffect, useState } from "react";
 import HealthcareMap from "../../components/maps/HealthcareMap";
 import { cityCoordinates } from "../../lib/healthcare/cityCoordinates";
-import { searchHealthcareCenters } from "../../lib/healthcare/searchHealthcareCenters";
 
 export default function AppointmentsPage() {
   const [city, setCity] = useState("seattle");
@@ -21,14 +20,25 @@ export default function AppointmentsPage() {
       try {
         setLoading(true);
 
-        const data = await searchHealthcareCenters(
-          selectedCity.lat,
-          selectedCity.lng
+        const params = new URLSearchParams({
+          lat: String(selectedCity.lat),
+          lng: String(selectedCity.lng),
+        });
+
+        const response = await fetch(
+          `/api/healthcare-centers?${params.toString()}`
         );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch centers");
+        }
+
+        const data = await response.json();
 
         setCenters(data);
       } catch (error) {
         console.error(error);
+        setCenters([]);
       } finally {
         setLoading(false);
       }
